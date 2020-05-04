@@ -1,6 +1,7 @@
 const gulp = require("gulp");
 const browserSync = require('browser-sync').create();
 const cleanCSS = require('gulp-clean-css');
+const rename = require('gulp-rename');
 
 
 // Static server
@@ -17,5 +18,6 @@ gulp.task('browser-sync', function() {
 gulp.task('minify-css', () => {
   return gulp.src('./*.css')
     .pipe(cleanCSS({compatibility: 'ie8'}))
+    .pipe(rename({suffix: '.min'}))
     .pipe(gulp.dest('dist'));
 });
