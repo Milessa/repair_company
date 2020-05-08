@@ -310,14 +310,18 @@ template {
   border-radius: 2px;
   text-transform: uppercase; }
   .button:hover {
-    cursor: pointer; }
+    color: #131313;
+    background-color: #ffffff;
+    cursor: pointer;
+    box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.3); }
   .button--primary {
     background-color: #E3B873;
     color: #ffffff;
-    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
-    transition: box-shadow 0.3s; }
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
+    transition: box-shadow 0.2s; }
     .button--primary:hover {
-      box-shadow: none; }
+      box-shadow: none;
+      box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.3); }
   .button--outline {
     border: 1px solid #ffffff;
     background-color: transparent;
@@ -374,7 +378,14 @@ body {
 
 .logo {
   color: #E3B873;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  cursor: pointer; }
+  .logo a {
+    color: #E3B873;
+    text-decoration: none;
+    transition: color 0.2s; }
+    .logo a:hover {
+      color: #ffffff; }
 
 .nav__item {
   color: #ffffff;
@@ -388,6 +399,9 @@ body {
 
 .phone {
   color: #E3B873; }
+  .phone:hover {
+    color: #ffffff;
+    transition: color 0.2s; }
 
 .contacts__phone {
   margin-right: 45px; }
@@ -420,10 +434,11 @@ body {
     margin-right: 20px; }
   .hero__instagram {
     position: absolute;
+    top: 0;
     left: 0;
     right: 0;
     max-width: 80px;
-    height: 85%; }
+    height: 100%; }
   .hero__scroll-down {
     position: absolute;
     display: flex;
@@ -438,6 +453,9 @@ body {
     text-transform: uppercase;
     text-decoration: none;
     color: #ffffff; }
+    .hero__scroll-down:hover::after {
+      border: 2px solid #ffffff;
+      background: url("../img/arrow-down-light.svg") no-repeat center; }
     .hero__scroll-down::after {
       content: '';
       background: url("../img/arrow-down.svg") no-repeat center;
@@ -446,12 +464,17 @@ body {
       border: 2px solid #E3B873;
       border-radius: 50%;
       margin-left: 12px; }
+    .hero__scroll-down:hover {
+      color: #E3B873;
+      transition: color 0.2s; }
 
 .instagram {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #131313; }
+  .instagram:hover {
+    cursor: pointer; }
   .instagram__link {
     display: flex;
     align-items: center;
