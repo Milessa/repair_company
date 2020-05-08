@@ -45,6 +45,7 @@
     text-transform: uppercase
     text-decoration: none
     color: $light
+    transition: 0.2s
     &:hover::after
       border: 2px solid $light
       background: url('../img/arrow-down-light.svg') no-repeat center
@@ -58,12 +59,12 @@
       margin-left: 12px
     &:hover
       color: $primary
-      transition: color 0.2s
 .instagram
   display: flex
   justify-content: center
   align-items: center
   background-color: $dark
+  transition: color 0.2s
   &:hover
     cursor: pointer
   &__link
@@ -74,12 +75,17 @@
     color: $primary
     transform: rotate(90deg)
     background-image: 0.8em
+    transition: color 0.2s
+    &:hover
+      color: $light
     &::after
       content: ''
       width: 50px
       height: 1px
       background-color: $primary
       margin-left: 8px
+    &:hover::after
+      background-color: $light
 .title
   margin: 0
   font-family: 'Yeseva One', cursive
