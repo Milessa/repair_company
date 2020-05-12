@@ -351,23 +351,29 @@ body {
   font-family: 'Futura Book', sans-serif;
   font-size: 0.8rem; }
 
-.section-title {
-  text-align: center;
-  text-transform: uppercase;
-  font-family: 'Yeseva One', cursive; }
-  .section-title__headings {
-    font-weight: 400;
-    font-size: 1.24rem; }
-  .section-title__image {
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-    .section-title__image::before, .section-title__image::after {
-      content: '';
-      width: 32px;
-      height: 2px;
-      background-color: #E3B873;
-      margin: 0 10px; }
+img {
+  max-width: 100%; }
+
+.section {
+  padding: 60px 0; }
+  .section-title {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Yeseva One', cursive; }
+    .section-title__headings {
+      font-weight: 400;
+      font-size: 1.24rem; }
+    .section-title__image {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 2rem; }
+      .section-title__image::before, .section-title__image::after {
+        content: '';
+        width: 32px;
+        height: 2px;
+        background-color: #E3B873;
+        margin: 0 10px; }
 
 .header {
   position: fixed;
@@ -533,6 +539,79 @@ body {
   .title--primary {
     color: #E3B873; }
 
+.types__description {
+  max-width: 95%;
+  width: 44rem;
+  height: 4rem;
+  margin: auto;
+  margin-bottom: 1.4rem;
+  text-align: center;
+  font-family: 'Futura Book', sans-serif;
+  line-height: 1.7rem;
+  font-size: 1.4rem; }
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; }
+
+.col {
+  flex-basis: 32%; }
+
+.card__text {
+  position: relative;
+  margin: 0 2rem;
+  margin-top: -8rem;
+  padding: 1.79rem 2.14rem;
+  font-family: 'Futura Book', sans-serif;
+  text-align: left;
+  max-width: 23.6rem;
+  background-color: #ffffff;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03); }
+
+.card h3 {
+  font-weight: 400; }
+
+.card__title {
+  font-family: 'Yeseva One', cursive;
+  font-size: 1.14rem;
+  margin-top: -0.4rem;
+  margin-bottom: 0.7rem;
+  text-transform: none; }
+
+.card__list {
+  padding: 0 0 0 1.2rem;
+  margin: 0;
+  font-size: 0.88rem;
+  text-transform: none;
+  line-height: 1.87rem;
+  color: #959595; }
+
+.card__pricetag {
+  position: absolute;
+  left: 0;
+  bottom: -1.79rem;
+  font-size: 1rem;
+  font-family: 'Yeseva One', cursive;
+  text-transform: uppercase;
+  background-color: #E3B873;
+  color: #ffffff;
+  padding: 1.2rem 3rem; }
+
+.card--design {
+  padding-top: 1.214rem;
+  padding-right: 4rem;
+  padding-left: 2rem;
+  position: absolute;
+  left: 0;
+  bottom: -1.79rem;
+  font-size: 1.29rem;
+  font-family: 'Yeseva One', cursive;
+  font-weight: normal;
+  text-transform: uppercase;
+  background-color: #E3B873;
+  color: #fff; }
+
 @media screen and (min-width: 1200px) {
   html {
     font-size: 1rem; }
@@ -584,15 +663,32 @@ body {
     font-size: 0.85rem;
     max-width: 13.7rem; } }
 
-@media screen and (max-width: 768px) {
-  body {
-    font-size: 1rem; }
-  .hero__instagram {
-    max-width: 50px; }
-  .hero__content {
-    max-width: 30rem; }
-  .hero__button {
-    max-width: 13rem; } }
+@media screen and (max-width: 968px) {
+  .card__pricetag {
+    padding: 1.2rem 1.9rem; } }
+
+@media screen and (max-width: 909px) {
+  .types__card {
+    max-width: 96%;
+    width: 250px; }
+  .types__description {
+    width: auto; }
+  .description {
+    width: auto;
+    height: auto; } }
+
+@media screen and (max-width: 760px) {
+  .row {
+    flex-direction: column;
+    align-items: center; }
+  .types__card {
+    margin-bottom: 5.7rem; }
+  .types__description {
+    margin-bottom: 2rem;
+    width: auto;
+    height: auto; }
+  .card__text {
+    margin-left: 0; } }
 
 @media screen and (max-width: 691px) {
   body {
