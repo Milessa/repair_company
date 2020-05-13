@@ -344,11 +344,12 @@ template {
 
 .container {
   width: 89%;
-  max-width: 1272px;
-  margin: auto;
-  width: 89%;
   max-width: 1140px;
   margin: auto; }
+  .container--hero, .container--header {
+    width: 89%;
+    max-width: 1272px;
+    margin: auto; }
 
 .block {
   -webkit-animation: show 2s ease 2s infinite;
@@ -403,7 +404,7 @@ img {
   width: 100%;
   z-index: 99;
   background-color: #131313;
-  padding: 24px 0; }
+  padding: 22px 0; }
 
 .menu {
   display: flex;
@@ -609,34 +610,34 @@ img {
   font-family: 'Yeseva One', cursive;
   font-size: 1.12rem;
   margin-top: -0.2rem;
-  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
   text-transform: none;
   font-weight: normal; }
 
 .card__list {
   padding: 0 0 0 1rem;
   margin: 0;
-  font-size: 1.07rem;
+  font-size: 0.91rem;
   text-transform: none;
-  line-height: 1.79rem;
+  line-height: 1.625rem;
   color: #959595;
   font-weight: normal; }
 
 .card__pricetag {
   position: absolute;
   left: 0;
-  bottom: -1.7rem;
+  bottom: -3.2rem;
   font-size: 1.29rem;
   font-family: 'Yeseva One', cursive;
   font-weight: normal;
   text-transform: uppercase;
   background-color: #E3B873;
   color: #ffffff;
-  padding: 1.0rem 2.6rem 1.1rem 2rem;
-  font-size: 18px; }
+  padding: 1.0rem 2.7rem 1.1rem 2rem;
+  font-size: 1.12rem; }
 
 .card--design {
-  padding-top: 1.2rem;
+  padding-top: 1.2remd;
   padding-right: 4.8rem;
   position: absolute;
   left: 0;
@@ -655,7 +656,7 @@ img {
   margin-bottom: 2rem; }
 
 .project__description {
-  max-width: 62%;
+  max-width: 68%;
   width: 54rem;
   height: 4rem;
   margin: auto;
@@ -663,8 +664,65 @@ img {
   margin-bottom: 2.2rem;
   text-align: center;
   font-family: 'Futura Book', sans-serif;
-  line-height: 2rem;
+  line-height: 1.7rem;
   font-size: 1.4rem; }
+
+.card--project__text {
+  position: relative;
+  max-width: 23.6rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-top: -8.1rem;
+  padding: 1.79rem 2.14rem;
+  text-align: left;
+  background-color: #ffffff;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03); }
+
+.card--project h3 {
+  font-weight: 400; }
+
+.card--project__title {
+  font-family: 'Yeseva One', cursive;
+  font-size: 1.1rem;
+  margin-top: -0.2rem;
+  margin-bottom: 0.5rem;
+  text-transform: none; }
+  .card--project__title--long {
+    margin-top: -0.1rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+    font-family: 'Yeseva One', cursive;
+    text-transform: none; }
+
+.card--project__list {
+  padding: 0 0 0 1rem;
+  margin: 0;
+  font-size: 0.91rem;
+  text-transform: none;
+  line-height: 1.62rem;
+  color: #959595;
+  font-weight: normal; }
+  .card--project__list--long {
+    padding: 0 0 0 1rem;
+    margin: 0;
+    font-size: 0.91rem;
+    text-transform: none;
+    line-height: 1.62rem;
+    color: #959595;
+    font-weight: normal; }
+
+.card--project__pricetag {
+  position: absolute;
+  left: 0;
+  bottom: -3.7rem;
+  font-size: 1.29rem;
+  font-family: 'Yeseva One', cursive;
+  font-weight: normal;
+  text-transform: uppercase;
+  background-color: #E3B873;
+  color: #ffffff;
+  padding: 1.0rem 5.05rem 1.1rem 2rem;
+  font-size: 1.12rem; }
 
 @media screen and (max-width: 1200px) {
   .container {
@@ -675,6 +733,11 @@ img {
 @media screen and (min-width: 1200px) {
   html {
     font-size: 1rem; } }
+
+@media screen and (max-width: 1220px) and (min-width: 1200px) {
+  .nav__item {
+    margin-right: 0.4rem;
+    font-size: 0.85rem; } }
 
 @media screen and (min-width: 1200px) and (max-height: 630px) {
   body {
@@ -697,6 +760,8 @@ img {
 @media screen and (max-width: 1199px) and (min-width: 692px) {
   body {
     font-size: 1rem; }
+  .container--hero, .container--header {
+    width: 84%; }
   .hero__scroll-down {
     min-width: 15rem;
     min-height: 4.9rem; }
@@ -710,6 +775,8 @@ img {
 @media screen and (max-width: 992px) {
   body {
     font-size: 1rem; }
+  .container--hero, .container--header {
+    width: 82%; }
   .nav {
     display: none; }
     .nav__content {
@@ -722,22 +789,28 @@ img {
     max-width: 13.7rem; } }
 
 @media screen and (max-width: 968px) {
-  .card__pricetag {
-    padding: 1.2rem 1.9rem; } }
-
-@media screen and (max-width: 890px) {
+  .container--hero, .container--header {
+    width: 82%; }
+  .card__pricetag, .card--pricetag__pricetag {
+    padding: 1.2rem 1.9rem; }
   .row {
     flex-direction: column;
     align-items: center; }
-  .types__card {
+  .types__card, .project__card {
     margin-bottom: 5.7rem; }
-  .card__text {
+  .card__text, .card--project__text {
     margin-left: 0; }
   .description {
     width: auto;
     height: auto; } }
 
+@media screen and (max-width: 890px) {
+  .container--hero, .container--header {
+    width: 80%; } }
+
 @media screen and (max-width: 691px) {
+  .container--hero, .container--header {
+    width: 93%; }
   body {
     font-size: 0.9rem; }
   .hero__instagram {
@@ -791,7 +864,7 @@ img {
 @media screen and (max-width: 375px) {
   body {
     font-size: 0.85rem; }
-  .container {
+  .container--hero, .container--header {
     width: 90%; }
   .logo {
     font-size: 0.86rem; }
@@ -815,27 +888,57 @@ img {
     font-size: 1.58rem; }
   .types__card {
     margin-top: 1rem;
-    margin-bottom: 3.9rem; }
+    margin-bottom: 6.1rem; }
   .project__card {
     margin-top: 1rem;
-    margin-bottom: 5.8rem; }
+    margin-bottom: 6.8rem; }
+    .project__card--long {
+      margin-top: 0.4rem;
+      margin-bottom: 6.8rem; }
   .project__description {
     font-size: 1.18rem;
-    max-width: 94%;
+    max-width: 87%;
     line-height: 125%;
     margin-top: -0.4rem;
     margin-bottom: 3rem; }
   .card__text {
-    margin-right: 4.9rem;
-    margin-top: -10.2rem; }
+    margin-right: 5.1rem;
+    margin-top: -10.7rem;
+    padding-left: 2.3rem; }
   .card__title {
     font-size: 1.075rem;
     margin-bottom: 0.7rem; }
   .card__list {
-    line-height: 1.6rem; }
+    line-height: 1.6rem;
+    font-size: 1rem;
+    padding-right: 1rem;
+    margin-top: 0.9rem;
+    margin-bottom: -2.3rem; }
   .card__pricetag {
     font-size: 1rem;
-    padding: 1rem 2.7rem; } }
+    padding: 1rem 2.7rem; }
+  .card--project__text {
+    margin-right: 5.1rem;
+    margin-top: -10.4rem;
+    margin-left: 0;
+    padding-left: 2.3rem;
+    padding-bottom: 0.7rem; }
+  .card--project__title {
+    font-size: 1.075rem;
+    margin-bottom: 0.7rem; }
+    .card--project__title--long {
+      margin-top: -0.1rem;
+      margin-bottom: 0.9rem; }
+  .card--project__list {
+    line-height: 1.6rem;
+    font-size: 1rem;
+    padding-right: 1rem;
+    margin-top: 0.9rem; }
+  .card--project__pricetag {
+    font-size: 1rem;
+    padding: 1rem 3.7rem; }
+  .col {
+    max-width: 24.4rem; } }
 
 @media screen and (max-width: 370px) {
   .hero__content {
