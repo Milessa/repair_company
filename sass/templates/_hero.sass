@@ -4,7 +4,7 @@
   flex-direction: column
   justify-content: center
   align-items: flex-start
-  padding-top: 90px
+  padding-top: 85px
   background: $dark url('../img/hero_bg.jpg') no-repeat center / cover
   height: 100vh
   color: $light
@@ -18,18 +18,25 @@
     background-color: rgba($dark, 0.7)
   &__content
     position: relative
-    max-width: 670px
+    max-width: 41rem
+    margin-left: 3.7rem
+  &__title
+    margin-bottom: 1rem
+    font-weight: 400
   &__text
-    font-size: 22px
-    max-width: 530px
+    font-size: 1.38rem
+    max-width: 540px
+    line-height: 137%
+    margin: 0 
+    margin-bottom: 2.7rem
   &__button
-    margin-right: 20px
+    margin-right: 16px
   &__instagram
     position: absolute
     top: 0
     left: 0
     right: 0
-    max-width: 80px
+    max-width: 86px
     height: 100%
   &__scroll-down
     position: absolute
@@ -38,10 +45,11 @@
     align-items: center
     left: 0
     bottom: 0
-    min-width: 247px
-    min-height: 97px
+    min-width: 17.6rem
+    min-height: 6.92rem
     font-family: 'Yeseva One', cursive
     background-color: $dark
+    font-size: 0.75rem
     text-transform: uppercase
     text-decoration: none
     color: $light
@@ -56,7 +64,7 @@
       height: 30px
       border: 2px solid $primary
       border-radius: 50%
-      margin-left: 12px
+      margin-left: 18px
     &:hover
       color: $primary
 .instagram
@@ -70,12 +78,17 @@
   &__link
     display: flex
     align-items: center
+    font-size: 1.1rem
+    font-family: 'FuturaDemiC', sans-serif
     text-transform: uppercase
     text-decoration: none
     color: $primary
     transform: rotate(90deg)
-    background-image: 0.8em
+    background-image: 0.8rem 
     transition: color 0.2s
+    font-size: 0.86rem
+    margin-top: 3.5rem
+    margin-right: 0.2rem
     &:hover
       color: $light
     &::after
@@ -83,13 +96,15 @@
       width: 50px
       height: 1px
       background-color: $primary
-      margin-left: 8px
-    &:hover::after
+      margin-left: 16px
+    &:hover:after
       background-color: $light
 .title
   margin: 0
   font-family: 'Yeseva One', cursive
   text-transform: uppercase
-  font-size: 40px
+  font-size: 2.5rem
+  line-height: 1.35
+  margin-bottom: 0.9rem
   &--primary
     color: $primary
